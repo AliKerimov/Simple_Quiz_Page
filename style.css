@@ -1,0 +1,136 @@
+body {
+  width: 100%;
+  /* margin: 0 auto; */
+  background-color: rgb(224, 224, 222);
+  overflow-x: hidden;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.add-score {
+  display: flex;
+  justify-content: space-between;
+}
+#success {
+  background-color: green;
+}
+#wrong {
+  background-color: red;
+}
+.count {
+  font-size: 33px;
+  color: rgb(165, 16, 120);
+}
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#ul {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 0px;
+  list-style: none;
+  background-color: white;
+  margin: 10px 0px;
+  animation: fadeIn .4s;
+  animation: fadeOut .3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  70% {
+    opacity: .7;
+  }
+  35% {
+    opacity: .3;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+.question {
+  text-align: center;
+  margin-top: 30px;
+}
+.loading {
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgb(165, 16, 120);
+  display: flex;
+}
+.pink {
+  background-color: rgb(165, 16, 120);
+  width: 10%;
+}
+/* .modal-cont{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+} */
+/* .modal{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 35%;
+    left: 40%;
+    z-index: 100;
+    background-color: aquamarine;
+    padding: 20px;
+} */
+.congarts {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: violet;
+  padding: 10px;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.result {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 4px;
+  color: green;
+}
